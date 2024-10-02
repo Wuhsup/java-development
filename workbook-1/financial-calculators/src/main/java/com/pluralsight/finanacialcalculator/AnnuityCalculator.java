@@ -37,10 +37,8 @@ public class AnnuityCalculator {
     public static void main(String[] args) {
         AnnuityCalculator calculator = new AnnuityCalculator();
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter 1 to calculate the present value\nEnter 2 to calculate the monthly payment\nEnter 3 to calculate the total number of payments");
         int userInput = scanner.nextInt();
-
         if (userInput == 1) {
             System.out.println("Enter Monthly Payment: ");
             calculator.monthlyPayment = scanner.nextDouble();
@@ -71,9 +69,10 @@ public class AnnuityCalculator {
         } else {
             System.out.println("Invalid input");
         }
-
         scanner.close();
+
     }
+
 }
 
 
